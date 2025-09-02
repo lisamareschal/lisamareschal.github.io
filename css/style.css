@@ -1,57 +1,121 @@
+/* General reset */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background: #f4f8fb;
+  color: #333;
+  line-height: 1.6;
 }
 
+/* Header */
 header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
+  text-align: center;
+  padding: 2rem 1rem;
+  background: linear-gradient(135deg, #74b9ff, #a29bfe);
+  color: white;
 }
-
 header h1 {
-    margin: 0;
+  margin-bottom: 0.5rem;
 }
 
+/* Navigation */
 nav {
-    background: #555;
-    color: #fff;
-    padding: 0.5rem;
+  background: #2d3436;
+  padding: 0.5rem;
 }
-
 nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  margin: 0 1rem;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+nav a:hover {
+  color: #ffeaa7;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 1rem;
+/* Bubble sections */
+.bubble {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 900px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.bubble:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
+/* Grid for projects */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+.project-card {
+  display: block;
+  background: #dfe6e9;
+  border-radius: 15px;
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;   /* removes link underline */
+  color: inherit;          /* keeps text color same */
+  transition: background 0.3s, transform 0.2s;
+}
+.project-card:hover {
+  background: #74b9ff;
+  color: white;
+  transform: scale(1.05);
 }
 
-section {
-    padding: 2rem;
-    text-align: center;
+.award-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
+.award-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* smaller space between cards */
+  margin-top: 1rem;
+}
+
+.award-card {
+  display: block;
+  background: #dfe6e9;
+  border-radius: 10px;  /* slightly smaller radius for thin cards */
+  padding: 0.6rem 1rem; /* less padding for thinner look */
+  font-weight: 500;
+  text-decoration: none; /* remove underline */
+  color: inherit;
+  transition: background 0.3s, transform 0.2s;
+}
+.award-card:hover {
+  background: #74b9ff;
+  color: white;
+  transform: translateX(5px); /* subtle hover effect */
+}
+
+
+/* Footer */
 footer {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-}
-
-.project {
-    border: 1px solid #ddd;
-    margin: 1rem 0;
-    padding: 1rem;
+  text-align: center;
+  padding: 1rem;
+  background: #2d3436;
+  color: white;
 }
