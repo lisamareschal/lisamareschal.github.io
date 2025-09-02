@@ -119,3 +119,33 @@ footer {
   background: #2d3436;
   color: white;
 }
+
+.edu-item {
+  display: flex;
+  align-items: center;  /* vertically center logo with text */
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.edu-item {
+  display: flex;
+  align-items: center;   /* vertically center logo with text */
+  gap: 1rem;             /* space between logo and text */
+  margin-bottom: 1.5rem;
+}
+
+.edu-logo {
+  width: 55px;   /* bigger logos */
+  height: auto;
+  flex-shrink: 0;
+}
+
+.edu-text {
+  flex: 1;
+}
+
+.edu-item.no-logo {
+  display: block;                     /* just text */
+  padding-left: calc(55px + 1rem);    /* match logo width + gap */
+}
+

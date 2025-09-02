@@ -1,4 +1,4 @@
-# serve.py
+# run_local_server.py
 import http.server
 import socketserver
 import webbrowser
