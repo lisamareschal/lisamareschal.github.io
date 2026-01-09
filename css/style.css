@@ -135,10 +135,13 @@ footer {
 }
 
 .edu-logo {
-  width: 55px;   /* bigger logos */
-  height: auto;
+  height: 55px;       /* all logos same height */
+  width: auto;        /* width scales proportionally */
+  object-fit: contain; /* preserve aspect ratio */
   flex-shrink: 0;
+  display: block;
 }
+
 
 .edu-text {
   flex: 1;
