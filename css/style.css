@@ -137,8 +137,8 @@ footer {
 
 
 .edu-logo {
-  height: 38px;          /* slightly smaller, more elegant */
-  width: 38px;           /* fixed box width */
+  height: 40px;          /* slightly smaller, more elegant */
+  width: 40px;           /* fixed box width */
   object-fit: contain;  /* scale logo inside box */
   flex-shrink: 0;
 }
@@ -157,7 +157,7 @@ footer {
 
 .edu-item.no-logo {
   display: block;                     /* just text */
-  padding-left: calc(55px + 1rem);    /* match logo width + gap */
+  padding-left: calc(40px + 1rem);    /* match logo width + gap */
 }
 
 .pdf-link {
