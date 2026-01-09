@@ -137,8 +137,8 @@ footer {
 
 
 .edu-logo {
-  height: 15px;          /* slightly smaller, more elegant */
-  width: 15px;           /* fixed box width */
+  height: 38px;          /* slightly smaller, more elegant */
+  width: 38px;           /* fixed box width */
   object-fit: contain;  /* scale logo inside box */
   flex-shrink: 0;
 }
