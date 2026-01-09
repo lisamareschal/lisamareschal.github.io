@@ -134,12 +134,20 @@ footer {
   margin-bottom: 1.5rem;
 }
 
+
+
 .edu-logo {
-  height: 55px;       /* all logos same height */
-  width: auto;        /* width scales proportionally */
-  object-fit: contain; /* preserve aspect ratio */
+  height: 42px;          /* slightly smaller, more elegant */
+  width: 42px;           /* fixed box width */
+  object-fit: contain;  /* scale logo inside box */
   flex-shrink: 0;
-  display: block;
+}
+
+.edu-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;           /* slightly tighter spacing */
+  margin-bottom: 1.5rem;
 }
 
 
