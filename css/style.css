@@ -1,0 +1,229 @@
+/* General reset */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background: #f4f8fb;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: linear-gradient(135deg, #74b9ff, #a29bfe);
+  color: white;
+}
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+/* Navigation */
+nav {
+  background: #2d3436;
+  padding: 0.5rem;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  margin: 0 1rem;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+nav a:hover {
+  color: #ffeaa7;
+}
+
+/* Bubble sections */
+.bubble {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 900px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.bubble:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Grid for projects */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+.project-card {
+  display: block;
+  background: #dfe6e9;
+  border-radius: 15px;
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;   /* removes link underline */
+  color: inherit;          /* keeps text color same */
+  transition: background 0.3s, transform 0.2s;
+}
+.project-card:hover {
+  background: #74b9ff;
+  color: white;
+  transform: scale(1.05);
+}
+
+.award-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.award-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* smaller space between cards */
+  margin-top: 1rem;
+}
+
+.award-card {
+  display: block;
+  background: #dfe6e9;
+  border-radius: 10px;  /* slightly smaller radius for thin cards */
+  padding: 0.6rem 1rem; /* less padding for thinner look */
+  font-weight: 500;
+  text-decoration: none; /* remove underline */
+  color: inherit;
+  transition: background 0.3s, transform 0.2s;
+}
+.award-card:hover {
+  background: #74b9ff;
+  color: white;
+  transform: translateX(5px); /* subtle hover effect */
+}
+
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #2d3436;
+  color: white;
+}
+
+.edu-item {
+  display: flex;
+  align-items: center;  /* vertically center logo with text */
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.edu-item {
+  display: flex;
+  align-items: center;   /* vertically center logo with text */
+  gap: 1rem;             /* space between logo and text */
+  margin-bottom: 1.5rem;
+}
+
+
+
+.edu-logo {
+  height: 40px;          /* slightly smaller, more elegant */
+  width: 40px;           /* fixed box width */
+  object-fit: contain;  /* scale logo inside box */
+  flex-shrink: 0;
+}
+
+.edu-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;           /* slightly tighter spacing */
+  margin-bottom: 1.5rem;
+}
+
+
+.edu-text {
+  flex: 1;
+}
+
+.edu-item.no-logo {
+  display: block;                     /* just text */
+  padding-left: calc(40px + 1rem);    /* match logo width + gap */
+}
+
+.pdf-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+.pdf-link:hover {
+  background: #2980b9;
+}
+
+/* Project page styling */
+body.project-page {
+    line-height: 1.6;
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+    background: #f4f8fb;
+    color: #333;
+}
+
+.project-page h1,
+.project-page h2,
+.project-page h3 {
+    color: #2c3e50;
+}
+
+.project-page .section {
+    background: #f9f9f9;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-left: 6px solid #3498db;
+    border-radius: 6px;
+}
+
+.project-page .section img {
+    display: block;
+    margin: 1rem auto;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.project-page .pdf-link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.project-page .pdf-link:hover {
+    background: #2980b9;
+}
+
+.project-page .authors {
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+

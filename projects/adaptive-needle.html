@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adaptive Needle Steering</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+    .section {
+      background: #f9f9f9;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-left: 6px solid #3498db;
+      border-radius: 6px;
+    }
+    .section img {
+      display: block;
+      margin: 1rem auto;
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    .pdf-link {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background: #3498db;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+    .pdf-link:hover {
+      background: #2980b9;
+    }
+    .authors {
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+    ul {
+      margin-left: 1.2rem;
+    }
+
+    body {
+          font-family: Arial, sans-serif;
+          line-height: 1.6;
+          padding: 2rem;
+          max-width: 900px;
+          margin: auto;
+        }
+        h1, h2, h3 {
+          color: #2c3e50;
+        }
+        .section {
+          background: #f9f9f9;
+          padding: 1.5rem;
+          margin-bottom: 1.5rem;
+          border-left: 6px solid #3498db;
+          border-radius: 6px;
+        }
+        .section img {
+          display: block;
+          margin: 1rem auto;
+          max-width: 100%;
+          height: auto;
+          border: 1px solid #ccc;
+          border-radius: 6px;
+        }
+        .pdf-link {
+          display: inline-block;
+          margin-top: 1rem;
+          padding: 0.5rem 1rem;
+          background: #3498db;
+          color: white;
+          text-decoration: none;
+          border-radius: 4px;
+          transition: background 0.3s;
+        }
+        .pdf-link:hover {
+          background: #2980b9;
+        }
+        .authors {
+          font-style: italic;
+          margin-bottom: 1rem;
+        }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Adaptive Needle Steering </h1>
+  <p class="authors">Student: Lisa Mareschal | Professor: Nobuhiko Hata | Surgical Navigation and Robotics lab
+    Brigham and Women’s Hospital, Harvard Medical School, Boston, USA</p>
+</header>
+
+<section class="section" id="overview">
+  <h2>Project Overview</h2>
+  <p>
+    Master thesis on <strong>system integration and pre-clinical evaluation of adaptive
+    needle steering</strong> for image-guided prostate interventions.
+    The objective was to build a complete experimental platform allowing
+    testing of a <strong>closed-loop model predictive control algorithm</strong>
+    capable of correcting needle deviation within soft tissues.
+  </p>
+</section>
+
+<section class="section" id="system">
+  <h2>System Design & Implementation</h2>
+  <p>
+    A functional prototype was designed and built to support real-time needle
+    steering experiments. The main challenges included:
+  </p>
+  <ul>
+    <li>Design (CATIA) and construction of a <strong>4-DOF needle guide</strong> (x, y, z, rotation)</li>
+    <li>Integration of position and rotation sensors using <strong>Arduino</strong></li>
+    <li>Bidirectional communication with the robot using <strong>ROS 2 (C++)</strong></li>
+    <li>Development of a <strong>3D Slicer module (Python)</strong> to define the needle target and visualize its live position</li>
+  </ul>
+</section>
+
+<section class="section" id="experiments">
+  <h2>Experiments & Analysis</h2>
+  <p>
+    First <strong>ex-vivo experiments</strong> were conducted to evaluate the performance
+    of the closed-loop control strategy. Experimental data were processed and
+    analyzed using <strong>Matlab</strong> to assess steering accuracy and system behavior.
+  </p>
+</section>
+
+<section class="section" id="links">
+  <h2>Project Links</h2>
+  <p>
+    <a href="https://github.com/lisaepfl/trajcontrol_lisa.git">
+      🔗 View GitHub Repository
+    </a>
+  </p>
+</section>
+
+<section class="section" id="report">
+  <h2>Master Thesis Report</h2>
+  <p>You can download the full master thesis report below:</p>
+  <a
+          href="../medias/pdfs/Thesis_Report___Lisa_Mareschal.pdf"
+          target="_blank"
+          class="pdf-link"
+  >
+    Download Thesis Report (PDF)
+  </a>
+</section>
+
+<p style="margin-top: 2rem;">
+  <a href="../index.html">← Back to Portfolio</a>
+</p>
+
+</body>
+</html>

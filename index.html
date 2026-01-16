@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lisa Mareschal - Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>
+      Lisa Mareschal
+      <a href="medias/pdfs/Lisa_Mareschal_resume_jan2026.pdf"
+         title="Download CV"
+         class="cv-link">
+        📄
+      </a>
+    </h1>
+    <p>Research Engineer | Robotics & Medical Technology | Quantitative Engineer</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#awards">Awards</a></li>
+      <li><a href="#interests">Interests</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="about" class="bubble">
+      <h2>About Me</h2>
+      <p> Swiss engineer with a passion for robotics, biomechanics, and software-driven innovation. I thrive at the intersection of technology, design, and human-centered solutions, blending rigorous engineering with creative problem-solving. I approach every challenge with curiosity, creativity, and a can-do attitude, and I am fully committed to the projects I undertake. I enjoy creating impactful solutions while collaborating with great teams. On my free time, you’ll find me outdoors, from skiing the mountains to kitesurfing the waves. </p>
+    </section>
+
+    <section id="experience" class="bubble">
+      <h2>Experience</h2>
+      <div class="item">
+        <h3>ZHAW – Research Engineer (2024 - current) </h3>
+        <p>Embedded systems, BLE, CAD, 3D printing, biomechanics research.</p>
+      </div>
+      <div class="item">
+        <h3>UBS / Credit Suisse – Quantitative Engineer (2022-2024) </h3>
+        <p>React, Python, Dash, regulatory risk tools, agile teamwork.</p>
+      </div>
+      <div class="item">
+        <h3>Alphadyne – Technology Intern (2020) </h3>
+        <p>Model validation, financial engineering, Python coding, NYC-based.</p>
+      </div>
+    </section>
+
+
+    <section id="education" class="bubble">
+      <h2>Education</h2>
+
+      <div class="edu-item">
+        <img src="medias/images/epfl_logo.png" alt="EPFL Logo" class="edu-logo">
+        <div class="edu-text">
+          <h3>Ecole polytechnique fédérale de Lausanne (EPFL), Switzerland</h3>
+          <p>Bachelor of Science in Microengineering (2016–2019)</p>
+          <p>Master in Robotics, medical applications focus (2019–2022)</p>
+        </div>
+      </div>
+
+      <div class="edu-item">
+        <img src="medias/images/harvard_logo.png" alt="Harvard Logo" class="edu-logo">
+        <div class="edu-text">
+          <h3>Harvard Medical School, Boston, USA</h3>
+          <p>Master exchange & Thesis collaboration (2021–2022)</p>
+        </div>
+      </div>
+
+      <div class="edu-item no-logo">
+        <div class="edu-text">
+          <h3>Institut International de Lancy, Switzerland</h3>
+          <p>Scientific Baccalauréat (2014–2016)</p>
+          <p>Specialization Mathematics – Highest Honors (19.5/20)</p>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <section id="projects" class="bubble">
+      <h2>Projects</h2>
+      <div class="grid">
+    <a href="projects/adaptive-needle.html" class="project-card">
+      <div>Adaptive Needle Steering</div>
+      <div class="project-goal">
+        to correct deviation of needle-tissue interaction
+      </div>
+    </a>
+
+    <a href="https://www.epfl.ch/labs/chili/wp-content/uploads/2021/07/LisaMareschal_Summary.pdf" class="project-card">
+      <div>Swarm Robotics</div>
+      <div class="project-goal">
+        to learn behaviours rules from robots interactions
+      </div>
+    </a>
+
+    <a href="projects/gait-speed.html" class="project-card">
+      <div>Gait Speed Estimation</div>
+      <div class="project-goal">
+        to assess and predict mobility-related functional decline
+      </div>
+    </a>
+
+    <a href="projects/ecal-stool.html" class="project-card">
+      <div>Stool it yourself!</div>
+      <div class="project-goal">
+        From concept to prototype: design a stool
+      </div>
+    </a>
+  </div>
+<!--      <div class="grid">-->
+<!--        <div class="project-card">Adaptive Needle Steering</div>-->
+<!--        <div class="project-card">Swarm Robotics</div>-->
+<!--        <div class="project-card">Gait Speed Estimation</div>-->
+<!--        <div class="project-card">Autonomous Robots</div>-->
+<!--      </div>-->
+    </section>
+
+    <section id="skills" class="bubble">
+      <h2>Skills & Strengths</h2>
+      <div class="skills-container">
+        <h3>Technical Skills</h3>
+        <ul class="skills-list">
+          <li>Python</li>
+          <li>React</li>
+          <li>Matlab</li>
+          <li>C / C++</li>
+          <li>SQL</li>
+          <li>ROS2</li>
+          <li>Git</li>
+          <li>CAD</li>
+          <li>Unity</li>
+          <li>3D Slicer</li>
+        </ul>
+
+        <h3>Entrepreneurial / Soft Skills</h3>
+        <ul class="skills-list">
+          <li>Creative problem-solving</li>
+          <li>Team collaboration</li>
+          <li>Project ownership & commitment</li>
+          <li>Strategic thinking</li>
+          <li>Communication & storytelling</li>
+          <li>Adaptability & resilience</li>
+          <li>User-centered design</li>
+          <li>Time management & execution focus</li>
+        </ul>
+      </div>
+    </section>
+
+    <style>
+      /* Skills section styling */
+      #skills.bubble {
+        padding: 2rem;
+        background: #f9f9f9;
+        border-left: 6px solid #3498db;
+        border-radius: 6px;
+        margin-bottom: 2rem;
+      }
+
+      #skills h2 {
+        color: #2c3e50;
+        margin-bottom: 1rem;
+      }
+
+      .skills-container h3 {
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+        color: #34495e;
+      }
+
+      .skills-list {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+        margin: 0 0 1rem 0;
+      }
+
+      .skills-list li {
+        background: #3498db;
+        color: white;
+        font-weight: 500;
+        padding: 0.4rem 0.8rem;
+        margin: 0.3rem;
+        border-radius: 4px;
+        font-size: 0.9rem;
+        transition: transform 0.2s, background 0.2s;
+      }
+
+      .skills-list li:hover {
+        background: #2980b9;
+        transform: translateY(-2px);
+      }
+
+      .project-goal {
+        margin-top: 0.3rem;
+        font-size: 0.95rem;
+        color: #5B7FA6; /* softer, secondary color */
+      }
+
+    </style>
+
+
+    <section id="awards" class="bubble">
+      <h2>Awards & Publications</h2>
+      <div class="award-list">
+        <a href="https://nccr-robotics.ch/msc-thesis-award-to-master-students-in-robotics/" class="award-card">
+          2022 – NCCR Robotics MSc Thesis Award, awarded by the Swiss National Center of Competence in Research in Robotics; selected among women MSc graduates in robotics across Switzerland
+        </a>
+        <a href="https://www.researchgate.net/publication/370158980_Data-driven_adaptive_needle_insertion_assist_for_transperineal_prostate_interventions" class="award-card">
+          2022–2023 – Co-writer with Harvard Medical School lab of “Data-driven adaptive needle insertion assist for transperineal prostate interventions” wirh in Physics in Medicine & Biology
+        </a>
+        <a href="https://esbiomech.org/conference/archive/2025zurich/abstracts/392.pdf"
+           class="award-card">
+          2025 – Selected to present at ESB Zurich (European Society of Biomechanics), ETH Zurich research work on
+            “Combining Virtual Reality Gaming and Active Sitting for Postural Control Analysis:
+            A Discriminatory Validity Study”
+        </a>
+
+      </div>
+    </section>
+
+<!--    -->
+<!--    <section id="awards" class="bubble">-->
+<!--      <h2>Awards</h2>-->
+<!--      <ul>-->
+<!--        <li>2022 – NCCR Robotics MSc Thesis Award</li>-->
+<!--        <li>2023 – Co-author: Physics in Medicine & Biology</li>-->
+<!--      </ul>-->
+<!--    </section>-->
+
+    <section id="interests" class="bubble">
+      <h2>Interests</h2>
+      <p>Sports (Taekwondo, skiing, diving, kitesurfing), arts (painting, pottery, piano), travelling </p>
+    </section>
+
+    <section id="contact" class="bubble">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:lisa.mareschal1@gmail.com">lisa.mareschal1@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/lisa-mareschal" target="_blank">Lisa Mareschal</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Lisa Mareschal</p>
+  </footer>
+</body>
+</html>

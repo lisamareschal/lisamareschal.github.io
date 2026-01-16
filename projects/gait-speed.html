@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gait Speed Estimation</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          line-height: 1.6;
+          padding: 2rem;
+          max-width: 900px;
+          margin: auto;
+        }
+        h1, h2, h3 {
+          color: #2c3e50;
+        }
+        .section {
+          background: #f9f9f9;
+          padding: 1.5rem;
+          margin-bottom: 1.5rem;
+          border-left: 6px solid #3498db;
+          border-radius: 6px;
+        }
+        .section img {
+          display: block;
+          margin: 1rem auto;
+          max-width: 100%;
+          height: auto;
+          border: 1px solid #ccc;
+          border-radius: 6px;
+        }
+        .pdf-link {
+          display: inline-block;
+          margin-top: 1rem;
+          padding: 0.5rem 1rem;
+          background: #3498db;
+          color: white;
+          text-decoration: none;
+          border-radius: 4px;
+          transition: background 0.3s;
+        }
+        .pdf-link:hover {
+          background: #2980b9;
+        }
+        .authors {
+          font-style: italic;
+          margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Gait Speed Estimation Using Trunk Sensors</h1>
+    <p class="authors">Student: Lisa Mareschal | Supervisor: Arash Atrsaei | Professor: Kamiar Aminian | LMAM, EPFL</p>
+</header>
+
+<section class="section" id="problem">
+    <h2>Problem</h2>
+    <p>
+        Gait speed is a powerful clinical marker for assessing mobility and predicting functional decline. Existing methods often require sensors at fixed positions, which may be impractical in real-world, home-based assessments.
+        This project investigates the effect of sensor location around the belt on gait speed estimation and proposes a method that is independent of sensor placement.
+    </p>
+</section>
+
+<section class="section" id="method">
+    <h2>Method</h2>
+    <p>
+        IMU sensors were placed at four positions around the belt (sternum, hip, L5, and an arbitrary waist position).
+        Vertical acceleration signals in the global frame were processed and features extracted. A Gaussian Process Regression (GPR) model mapped these features to gait speed.
+    </p>
+    <img src="../medias/images/gait_estimation_sensor_positions.png" alt="Sensor Locations">
+</section>
+
+<section class="section" id="results">
+    <h2>Results</h2>
+    <p>
+        The algorithm was validated on 15 young healthy participants performing daily-life activities. Median RMSE for predicted gait speed was below 0.2 m/s for all sensor positions, demonstrating the effectiveness of a location-independent approach.
+    </p>
+    <img src="../medias/images/gait_estimation_boxplot_results.png" alt="Gait Speed Prediction vs Reference">
+</section>
+
+<section class="section" id="discussion">
+    <h2>Discussion</h2>
+    <p>
+        High correlation between signals from different sensor locations confirms that gait speed can be accurately estimated with trunk sensors. The method improves user comfort compared to foot sensors and can be applied in home settings.
+    </p>
+</section>
+
+<section class="section" id="pdf">
+    <h2>Full Project PDF</h2>
+    <p>You can download the complete report below:</p>
+    <a href="../medias/pdfs/Semester_project_gait_estimation_final_paper.pdf" target="_blank" class="pdf-link">
+        Download Full Report
+    </a>
+</section>
+
+</body>
+</html>
